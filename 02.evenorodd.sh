@@ -4,7 +4,7 @@ number=$1
 
 rem=$(( $number % 2 ))
 
-if ( $rem -eq 0 ); then
+if [ $rem -eq 0 ]; then
 
   echo "$number is even number"
 
