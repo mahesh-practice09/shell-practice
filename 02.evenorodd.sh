@@ -2,7 +2,7 @@
 
 number=$1
 
-rem=$(( $number / 2 ))
+rem=$(( $number % 2 ))
 
 if ( $rem -eq 0 ); then
 
