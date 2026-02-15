@@ -9,6 +9,6 @@
 # ((count++))
 # done
 
-while IFS=read -r line; do
+while IFS= read -r line; do
 echo "Line: $line"
 done < 20.script.sh
