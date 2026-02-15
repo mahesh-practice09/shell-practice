@@ -26,6 +26,8 @@ fi
 
 mkdir -p $LOGS_FOLDER
 
+toucch file1.txt
+
 VALDIATE() {
     if [ $1 -eq 0 ]; then
     echo -e "$2...$G Success $N" 
@@ -36,7 +38,7 @@ VALDIATE() {
 
 for package in $@
    do
-     dnff list installed | grep $package &>> $LOGS_File
+     dnf list installed | grep $package &>> $LOGS_File
      if [ $? -ne 0 ]; then
         dnf install $package -y &>> $LOGS_File
         VALDIATE $? "Installing $package"
