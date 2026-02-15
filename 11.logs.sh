@@ -3,12 +3,14 @@
 set -o pipefail
 
 LOGS_FOLDER=/var/log/Shell-Script
-LOGS_File=/var/log/Shekk-Script/$0.log
+LOGS_File=/var/log/Shell-Script/$0.log
+
+
 
 Userid=$(id -u)
 
 if [ $Userid != 0 ]; then
-   echo "please run the script with sudo permissions" | tee -a $LOGS_File
+   echo "please run the script with sudo permissions" 
    exit 1
 fi
 
