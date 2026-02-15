@@ -7,8 +7,9 @@ if [ $# -lt 1 ]; then
 
 NUM=$20
 
-if [$NUM -gt 20]; then
+if [ $NUM -gt 20 ]; then
    echo "$NUM is greater then 20"
 else
-   echi $NUM is less than 20"
+   echo "$NUM is less than 20"
 fi
+
