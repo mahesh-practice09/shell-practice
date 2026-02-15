@@ -16,7 +16,7 @@ VALDIATE() {
 }
 
 
-dnf install nginx -y
-VALDIATE $? , "Installing nginx"
+dnf install nginx -y 
+VALDIATE $? "Installing nginx"
 
 
