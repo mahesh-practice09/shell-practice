@@ -26,7 +26,7 @@ fi
 
 mkdir -p $LOGS_FOLDER
 
-toucch file1.txt
+toucchff file1.txt
 
 VALDIATE() {
     if [ $1 -eq 0 ]; then
