@@ -2,7 +2,7 @@
 
 set -o pipefail
 #set -e
-trap 'echo "Script have been Interrupted by pressing CTRL+C ; exit 1"' 'SIGINT'
+trap 'echo "Script have been Interrupted by pressing CTRL+C"; exit 1' SIGINT
 
 LOGS_FOLDER=/var/log/Shell-Script
 LOGS_File=/var/log/Shell-Script/$0.log
