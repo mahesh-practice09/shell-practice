@@ -20,3 +20,8 @@ dnf install nginx -y
 VALDIATE $? "Installing nginx"
 
 
+dnf install mysql -y 
+VALDIATE $? "Installing mysql"
+
+dnf install nodejs -y 
+VALDIATE $? "Installing nodejs"
