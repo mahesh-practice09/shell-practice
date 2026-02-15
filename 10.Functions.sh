@@ -9,7 +9,7 @@ fi
 
 VALDIATE() {
     if [ $1 -eq 0 ]; then
-    echo "$2...Success"
+    echo "'$2'...Success"
     else
     echo "$2...Failure"
     fi
@@ -17,6 +17,6 @@ VALDIATE() {
 
 
 dnf install nginx -y
-VALDIATE $? , Install nginx
+VALDIATE $? ,"Install nginx"
 
 
