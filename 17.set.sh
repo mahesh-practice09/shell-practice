@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -o pipefail
-set -e
+#set -e
 
 LOGS_FOLDER=/var/log/Shell-Script
 LOGS_File=/var/log/Shell-Script/$0.log
