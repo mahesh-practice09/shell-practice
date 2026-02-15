@@ -25,7 +25,7 @@ VALDIATE() {
 }
 
 
-dnf install nginxx -y &>> $LOGS_File
+dnf install nginx -y &>> $LOGS_File
 VALDIATE $? "Installing nginx"
 
 dnf install mysql -y &>> $LOGS_File
