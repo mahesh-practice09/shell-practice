@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -o pipefail
-#set -e
+set -e
 trap 'echo "Script have been Interrupted by pressing CTRL+C"; exit 1' SIGINT
 trap 'echo "There is an error in $LINENO, Command: $BASH_COMMAND"' ERR
 
