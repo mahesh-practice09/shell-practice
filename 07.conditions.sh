@@ -1,5 +1,11 @@
 #!/bin/bash
 
+
+# -ne not equal
+# -gt greater than
+# -lt less than
+# -eq equal
+
 if [ $# -lt 1 ]; then
    echo "Provide the number to check if it is greater than 20"
    exit 1
