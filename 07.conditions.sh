@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ $# -lt 1 ]; then
+   echo "Provide the number to check if it is greater than 20"
+   exit 1
+   fi
+
+NUM=$20
+
+if [$NUM -gt 20]; then
+   echo "$NUM is greater then 20"
+else
+   echi $NUM is less than 20"
+fi
