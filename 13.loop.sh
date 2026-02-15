@@ -12,6 +12,11 @@ if [ $Userid != 0 ]; then
    exit 1
 fi
 
+if [ $# -eq 0 ]; then
+  echo "please provide the package name to install"
+  exit 1
+fi
+
 mkdir -p $LOGS_FOLDER
 
 VALDIATE() {
