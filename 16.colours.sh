@@ -14,12 +14,12 @@ N="\e[0m"
 Userid=$(id -u)
 
 if [ $Userid != 0 ]; then
-   echo "$Y please run the script with sudo permissions $N" 
+   echo -e "$Y please run the script with sudo permissions $N" 
    exit 1
 fi
 
 if [ $# -eq 0 ]; then
-  echo "$Y please provide the package name to install $N"
+  echo -e "$Y please provide the package name to install $N"
   exit 1
 fi
 
@@ -27,9 +27,9 @@ mkdir -p $LOGS_FOLDER
 
 VALDIATE() {
     if [ $1 -eq 0 ]; then
-    echo "$2...$G Success $N" 
+    echo -e "$2...$G Success $N" 
     else
-    echo "$2...$R Failure $N" 
+    echo -e "$2...$R Failure $N" 
     fi
 }
 
@@ -40,6 +40,6 @@ for package in $@
         dnf install $package -y &>> $LOGS_File
         VALDIATE $? "Installing $package"
    else
-     echo "$Y $package $N is already installed"
+     echo -e "$Y $package $N is already installed"
      fi
    done
