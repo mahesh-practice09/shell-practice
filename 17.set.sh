@@ -36,7 +36,7 @@ VALDIATE() {
 
 for package in $@
    do
-     dnf list installed | grep $package &>> $LOGS_File
+     dnff list installed | grep $package &>> $LOGS_File
      if [ $? -ne 0 ]; then
         dnf install $package -y &>> $LOGS_File
         VALDIATE $? "Installing $package"
