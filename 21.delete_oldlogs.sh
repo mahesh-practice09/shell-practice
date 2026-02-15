@@ -1,6 +1,11 @@
 #!/bin/bash
 
-LOGS_Folder=/var/logs
+LOGS_Folder=/var/log
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+B="\e[34m"
+N="\e[0m"
 Userid=$(id -u)
 
 if [ $Userid != 0 ]; then
