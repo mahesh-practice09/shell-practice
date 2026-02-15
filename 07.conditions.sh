@@ -14,5 +14,5 @@ else
    echo "$NUM is equal to 20"
 else
    echo "$NUM is less than 20"
+ fi
 fi
-
