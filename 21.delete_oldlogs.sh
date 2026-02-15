@@ -1,6 +1,7 @@
 #!/bin/bash
 
 LOGS_Folder=/var/logs
+Userid=$(id -u)
 
 if [ $Userid != 0 ]; then
    echo -e "$Y please run the script with sudo permissions $N" 
