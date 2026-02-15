@@ -5,7 +5,7 @@ if [ $# -lt 1 ]; then
    exit 1
    fi
 
-NUM=$20
+NUM=$1
 
 if [ $NUM -gt 20 ]; then
    echo "$NUM is greater then 20"
