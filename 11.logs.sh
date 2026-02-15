@@ -25,11 +25,11 @@ VALDIATE() {
 }
 
 
-dnf install nginxx -y | tee $LOGS_File
+dnf install nginxx -y &>> $LOGS_File
 VALDIATE $? "Installing nginx"
 
-dnf install mysql -y | tee $LOGS_File
+dnf install mysql -y &>> $LOGS_File
 VALDIATE $? "Installing mysql"
 
-dnf install nodejs -y | tee $LOGS_File
+dnf install nodejs -y &>> $LOGS_File
 VALDIATE $? "Installing nodejs"
