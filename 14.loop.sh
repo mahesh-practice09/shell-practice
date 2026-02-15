@@ -30,10 +30,10 @@ VALDIATE() {
 for package in $@
    do
      dnf list installed | grep $package
-     if [ $? -ne 0 ]
-     dnf install $package -y &>> $LOGS_File
-     VALDIATE $? "Installing $package"
-     else
+     if [ $? -ne 0 ]; then
+        dnf install $package -y &>> $LOGS_File
+        VALDIATE $? "Installing $package"
+   else
      echo "$package is already installed"
      fi
    done
