@@ -4,6 +4,7 @@ Userid=$(id -u)
 
 if [ $Userid != 0 ]; then
    echo "please run the script with sudo permissions"
+   exit 1
 fi
 
 
